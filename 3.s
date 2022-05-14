@@ -30,7 +30,7 @@ lw x29, 0(x7)             # armazena os dois elementos a se analizar do vetor em
 lw x30, 4(x7)
 blt x30, x29, Troca       # se o elemento em x30 eh menor que o elemento em x29 vai para Troca
 
-Continua:				  # seta as variaveis para a proxima iteracao
+Continua:                 # seta as variaveis para a proxima iteracao
 addi x6, x6, 1            # soma 1 em x6
 addi x7, x7, 4            # soma 4 em x7, representando o proximo endereco
 jal x0, Loop              # volta ao Loop interno
